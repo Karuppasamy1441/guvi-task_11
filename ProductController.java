@@ -18,24 +18,8 @@ public class ProductController {
 
     private ProductService productService;
     private ModelMapper modelMapper;
-//    private ProductRepository productRepository;
-//    @GetMapping("getAllProductDetails")
-//    List<ProductDto> getAllProductDetails(){
-//        return productService.getAllPrductsDetails();
-//    }
-//
-//    @PostMapping("addProductDetails")
-//    String  addProductDetails(@RequestBody ProductDto productDto){
-//        productService.addProductDetails(productDto);
-//        return "product details added successfully";
-//    }
-
-//    @DeleteMapping("deleteAllDetails")
-//    void deleteAllDetails(){
-//        productRepository.deleteAll();
-//    }
-
-    @GetMapping("/homePage")
+    
+     @GetMapping("/homePage")
     public String getHomePage(){
         return "index";
     }
